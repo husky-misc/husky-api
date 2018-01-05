@@ -3,11 +3,15 @@ The Husky API
 
 Husky has its own API. This is a REST-style API that uses JSON for serialization and OAuth 2 for authentication.
 
+Base URL
+----------------
 
 Making a request
 ----------------
 
 All URLs start with `https://app.husky.io/api/v1/`. **SSL only**. The path is prefixed with the API version. If we change the API in backward-incompatible ways, we'll bump the version marker and maintain stable support for the old URLs.
+
+If you still in development, you shall use Husky sandbox environment. It's available under `https://test1.husky.io/api/v1/`. **SSL only**.
 
 todo: request example.
 
