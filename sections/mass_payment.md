@@ -213,17 +213,9 @@ This will return `200 OK` if the close was a success, along with a success messa
 Add Transactions
 ----------------
 
-* `PUT /mass_payments/1/close` will add an existing or new transactions to a given mass payment.
+* `PUT /mass_payments/1/transactions` will add new transactions to a given mass payment.
 
-To add an existing transaction to the mass payment
-
-```json
-{
-   "tid":1000
-}
-```
-
-To add new transactions to the mass payment
+The only parameter is `transactions`, which is a list of transactions to be created and attached to the mass payment.
 
 ```json
 {
