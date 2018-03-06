@@ -40,7 +40,7 @@ Most collection APIs paginate their results. The first request returns up to
 Handling errors
 ---------------
 
-If Husky is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later. 
+If Husky is having trouble, you might see a 5xx error. `500` means that the app is entirely down, but you might also see `502 Bad Gateway`, `503 Service Unavailable`, or `504 Gateway Timeout`. It's your responsibility in all of these cases to retry your request later.
 
 
 Rate limiting
@@ -54,6 +54,7 @@ API ready for use
 -----------------
 
 * [Destination Account](https://github.com/husky-misc/husky-api/blob/master/sections/destination_account.md)
+* [Mass Payment](https://github.com/husky-misc/husky-api/blob/master/sections/mass_payment.md)
 
 
 Help us make it better
