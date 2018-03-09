@@ -21,7 +21,35 @@ That's all!
 Authentication
 --------------
 
-todo: authentication guide.
+Our API is authenticated with OAuth 2.0. Client ids and Client secrets are provided by us.
+
+
+Requesting Authorization and Receiving Access Token
+---------------------------------------------------
+
+To generate the access token, you must pass the `client_id` and `client_secret` as parameter to a `POST` request to `/users` or `/sessions` endpoint.
+
+```json
+{
+  "email": "dev@husky.io",
+  "password": "123",
+  "client_id": "84fc7912112a2ad0964759d58bc69557641666fea02fda511c32288ca79e093c",
+  "cliend_secret": "3d295675e8f721a2b7b533efb8dd51cbd7a17eeaabf99f5d67d31fefc78df234"
+}
+```
+
+Authenticating with invalid credentials will return `401 Unauthorized`.
+
+Making authenticated requests
+-----------------------------
+
+After successfully obtain an access token you will be able to make authenticated requests. When making calls to REST API methods, an access token must be included in every call in an Authorization header prefixed with bearer and a space.
+
+```
+curl -H "Authorization: Bearer XXX" https://app.husky.io/api/
+```
+
+Authorization with invalid access token will return `401 Unauthorized`.	
 
 No XML, just JSON
 -----------------
