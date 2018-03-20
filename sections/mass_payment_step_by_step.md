@@ -56,7 +56,7 @@ O retorno do exemplo acima será:
 
 ```
 {"data":{"message":"Successfully created mass payment
-#3"},"meta":{"code":200,"message":"success"}}
+#3", "mass_payment_id": "3"},"meta":{"code":200,"message":"success"}}
 ```
 
 2 - Adicionar um pagamento em um mass payment já existente
