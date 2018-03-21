@@ -121,7 +121,7 @@ Upload a compliance file to a user.
 curl -X POST "https://app.husky.io/api/v1/upload" -H  "Authorization: USER TOKEN" -H "content-type: multipart/form-data" -F "attachment=@/path/to/file" -F "class_attribute=proof_of_address"
 ```
 
-The parameter `class_attribute` can be one of the followign: `id_doc`, `proof_of_address`, `signed_register`, `social_security`, `signature_card`, `visit_report`, `tax_report` or `extra_files`.
+The parameter `class_attribute` can be one of the followign: `id_doc`, `proof_of_address`, `social_security`, `tax_report` or `extra_files`.
 
 This will return `201 Created`, with a success message.
 
