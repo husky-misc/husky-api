@@ -11,7 +11,9 @@ Authenticate user and get access token.
 ```json
 {
     "email": "john@doe.com",
-    "password": "password"
+    "password": "password",
+    "secret_id": "secret_id",
+    "client_id": "client_id"
 }
 ```
 
@@ -27,7 +29,9 @@ Send a password recovery token with instructions via email.
 
 ```json
 {
-    "email": "john@doe.com"
+    "email": "john@doe.com",
+    "secret_id": "secret_id",
+    "client_id": "client_id"
 }
 ```
 
@@ -44,7 +48,9 @@ Create a new password to an user.
 {
     "reset_password_token": "password_token",
     "password": "password",
-    "password_confirmation": "password"
+    "password_confirmation": "password",
+    "secret_id": "secret_id",
+    "client_id": "client_id"
 }
 ```
 

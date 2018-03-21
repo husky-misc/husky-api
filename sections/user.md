@@ -102,7 +102,9 @@ The following parameters are required:
    "email":"john@doe.com",
    "cell_phone":"xxxx-xxxx",
    "password":"password",
-   "password_confirmation":"password"
+   "password_confirmation":"password",
+   "client_id": "client_id",
+   "secret_id": "secret_id"
 }
 ```
 
