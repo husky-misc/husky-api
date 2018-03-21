@@ -49,8 +49,8 @@ Get all payments of a user.
 }
 ```
 
-Search Paymet
--------------
+Search Payment
+--------------
 
 Get a specific payment of a user.
 
