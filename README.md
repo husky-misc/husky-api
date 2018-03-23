@@ -83,6 +83,10 @@ API ready for use
 
 * [Destination Account](https://github.com/husky-misc/husky-api/blob/master/sections/destination_account.md)
 * [Mass Payment](https://github.com/husky-misc/husky-api/blob/master/sections/mass_payment.md)
+* [Banks](https://github.com/husky-misc/husky-api/blob/master/sections/banks.md)
+* [Payment](https://github.com/husky-misc/husky-api/blob/master/sections/payment.md)
+* [User](https://github.com/husky-misc/husky-api/blob/master/sections/user.md)
+* [Session](https://github.com/husky-misc/husky-api/blob/master/sections/session.md)
 
 
 Help us make it better

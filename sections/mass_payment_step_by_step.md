@@ -19,7 +19,7 @@ Exemplo:
 
 ```
 curl -i -X POST "https://test1.husky.io/api/v1/mass_payments/new"
--H "Authorization: ACCESS_TOKEN" -H "accept: application/json" -H "content-type: application/json" -d
+-H "Authorization: Bearer JmNmH3AuL5w5xgZw6eRKmUUm" -H "accept: application/json" -H "content-type: application/json" -d
 '{
    "transactions":[
       {
@@ -56,7 +56,7 @@ O retorno do exemplo acima será:
 
 ```
 {"data":{"message":"Successfully created mass payment
-#3"},"meta":{"code":200,"message":"success"}}
+#3", "mass_payment_id": "3"},"meta":{"code":200,"message":"success"}}
 ```
 
 2 - Adicionar um pagamento em um mass payment já existente
@@ -71,7 +71,7 @@ Exemplo:
 
 ```
 curl -i -X PUT "https://test1.husky.io/api/v1/mass_payments/2/transactions" -H
-"Authorization: ACCESS_TOKEN" -H "accept: application/json" -H "content-type: application/json" -d
+"Authorization: Bearer JmNmH3AuL5w5xgZw6eRKmUUm" -H "accept: application/json" -H "content-type: application/json" -d
 '{
    "transactions":[
       {
@@ -122,7 +122,7 @@ Exemplo:
 
 ```
 curl -i -X PUT "https://test1.husky.io/api/v1/mass_payments/2/close"  -H
-"Authorization: ACCESS_TOKEN" -H "accept: application/json" -H "content-type: application/json"
+"Authorization: Bearer JmNmH3AuL5w5xgZw6eRKmUUm" -H "accept: application/json" -H "content-type: application/json"
 ```
 
 O retoro do exemplo acima será:
@@ -145,7 +145,7 @@ Exemplo:
 
 ```
 curl -i -X GET "https://test1.husky.io/api/v1/mass_payments/2/"  -H
-"Authorization: ACCESS_TOKEN" -H "accept: application/json" -H "content-type: application/json"
+"Authorization: Bearer JmNmH3AuL5w5xgZw6eRKmUUm" -H "accept: application/json" -H "content-type: application/json"
 ```
 
 O retorno do exemplo acima será:
@@ -167,7 +167,7 @@ Exemplo:
 
 ```
 curl -i -X GET "https://test1.husky.io/api/v1/mass_payments/2/status"  -H
-"Authorization: ACCESS_TOKEN" -H "accept: application/json" -H "content-type: application/json"
+"Authorization: Bearer JmNmH3AuL5w5xgZw6eRKmUUm" -H "accept: application/json" -H "content-type: application/json"
 ```
 
 O retorno do exemplo acima será:
@@ -190,5 +190,5 @@ Exemplo:
 
 ```
 curl -i -X GET "https://test1.husky.io/api/v1/mass_payments/2/transactions?status=closed"  -H
-"Authorization: ACCESS_TOKEN" -H "accept: application/json" -H "content-type: application/json"
+"Authorization: Bearer JmNmH3AuL5w5xgZw6eRKmUUm" -H "accept: application/json" -H "content-type: application/json"
 ```
