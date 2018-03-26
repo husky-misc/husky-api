@@ -1,6 +1,56 @@
 Mass Payments
 =============
 
+Get All Mass Payment
+--------------------
+
+Get all mass payments from the user.
+
+* `Get /mass)payments/` show all mass payment.
+
+```json
+{
+   "data":[
+      {
+         "id":65,
+         "status":"opened",
+         "created_at":"2018-03-15T03:43:52.665Z",
+         "formatted_value":"$ 0.00",
+         "formatted_final_value":"R$ 300.00",
+         "number_of_transaction":3
+      },
+      {
+         "id":64,
+         "status":"processed",
+         "created_at":"2018-03-14T21:04:13.331Z",
+         "formatted_value":"$ 95.02",
+         "formatted_final_value":"R$ 300.00",
+         "number_of_transaction":3
+      },
+      {
+         "id":66,
+         "status":"opened",
+         "created_at":"2018-03-20T01:22:19.303Z",
+         "formatted_value":"$ 0.00",
+         "formatted_final_value":"R$ 300.00",
+         "number_of_transaction":3
+      },
+      {
+         "id":63,
+         "status":"waiting_deposit",
+         "created_at":"2018-03-14T21:01:41.031Z",
+         "formatted_value":"$ 95.02",
+         "formatted_final_value":"R$ 300.00",
+         "number_of_transaction":3
+      }
+   ],
+   "meta":{
+      "code":200,
+      "message":"success"
+   }
+}
+```
+
 Get Mass Payment
 ----------------
 

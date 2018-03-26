@@ -9,6 +9,7 @@ As operações usadas são as seguintes:
  4) Consultar informações sobre mass payment
  5) Consultar status do mass payment
  6) Consultar pagamentos por status
+ 7) Consultar todos os mass payments
 
 1 - Adicionar um mass payment
 -----------------------------
@@ -192,3 +193,25 @@ Exemplo:
 curl -i -X GET "https://test1.husky.io/api/v1/mass_payments/2/transactions?status=closed"  -H
 "Authorization: Bearer JmNmH3AuL5w5xgZw6eRKmUUm" -H "accept: application/json" -H "content-type: application/json"
 ```
+
+7 - Consultar todos os mass payments
+------------------------------------
+
+Para consultar todos os lotes criados por um usuário, pode-se usar o seguinte endpoint: `api/v1/mass_payments`
+
+Exemplo:
+
+```
+curl -i -X GET "https://test1.husky.io/api/v1/mass_payments" -H "Authorization: Bearer JmNmH3AuL5w5xgZw6eRKmUUm" -H "accept: application/json" -H "content-type: application/json"
+```
+
+O retorno do exemplo acima será:
+
+```
+{"data":[{"id":65,"status":"opened","created_at":"2018-03-15T03:43:52.665Z","formatted_value":"$ 0.00","formatted_final_value":"R$ 300.00","number_of_transaction":3},{"id":64,"status":"processed","created_at":"2018-03-14T21:04:13.331Z","formatted_value":"$ 95.02","formatted_final_value":"R$ 300.00","number_of_transaction":3},{"id":66,"status":"opened","created_at":"2018-03-20T01:22:19.303Z","formatted_value":"$ 0.00","formatted_final_value":"R$ 300.00","number_of_transaction":3},{"id":63,"status":"waiting_deposit","created_at":"2018-03-14T21:01:41.031Z","formatted_value":"$ 95.02","formatted_final_value":"R$ 300.00","number_of_transaction":3}],"meta":{"code":200,"message":"success"}}
+```
+
+Mass Payment Flowchart
+----------------------
+
+![alt text](../pictures/mass_payment_flow.png?raw=true "Mass Payment")
