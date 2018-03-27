@@ -6,7 +6,7 @@ Get All Mass Payment
 
 Get all mass payments from the user.
 
-* `Get /mass)payments/` show all mass payment.
+* `Get /mass/payments/` show all mass payment.
 
 ```json
 {
