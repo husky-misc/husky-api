@@ -153,7 +153,8 @@ O retorno do exemplo acima será:
 
 ```
 {"data":{"id":2,"status":"closed","created_at":"2018-03-08T20:13:32.992Z","formatted_value":"$
-171.43","formatted_final_value":"R$600.00","number_of_transaction":6},"meta":{"code":200,"message":"success"}}
+171.43","formatted_final_value":"R$600.00","formatted_total_value":"$171.43", "formatted_total_final_value":"R$600.00",
+"number_of_transaction":6},"meta":{"code":200,"message":"success"}}
 ```
 
 5 - Consultar status do mass payment
