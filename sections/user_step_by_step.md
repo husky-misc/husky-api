@@ -92,7 +92,7 @@ Será utilizado o seguinte endpoint: `api/v1/users/workflow`
 Exemplo:
 
 ```
-curl -i -X GET "https://test1.husy.io/api/v1/users/workflow" -H "Authorization: Bearer JmNmH3AuL5w5xgZw6eRKmUUm" -H "accept: application/json" -H "content-type: application/json"
+curl -i -X GET "https://test1.husky.io/api/v1/users/workflow" -H "Authorization: Bearer JmNmH3AuL5w5xgZw6eRKmUUm" -H "accept: application/json" -H "content-type: application/json"
 ```
 
 O retorno do exemplo acima será:
@@ -115,7 +115,7 @@ curl -i -X GET "https://test1.huky.io/api/v1/compliance" -H "Authorization: Bear
 O retorno do exemplo acima será:
 
 ```json
-{"data":{"required_documents":[{"id":"id_doc","name":"Government Issued Picture ID","description":"Government Issued Picture ID","uploaded":true,"rejected":false,"_links":{"self":"https://test1.husky.io/api/v1/compliance/id_doc"}},{"id":"proof_of_address","name":"Proof of address","description":"Picture of Utility bill or Bank statement","uploaded":false,"rejected":false,"_links":{"self":"https://test1.husky.io/api/v1/compliance/proof_of_address"}}]},"meta":{"code":200,"message":"success"}}
+{"data":{"required_documents":[{"id":"id_doc","name":"Front of the Government Issued Picture ID","description":"Front of the Government Issued Picture ID","uploaded":false,"rejected":false,"rejected_reason":"none - id_doc not analyzed yet","_links":{"self":"http://test1.husky.io/api/v1/compliance/id_doc"}},{"id":"back_id_doc","name":"Back of the Government Issued Picture ID","description":"Back of the Government Issued Picture ID","uploaded":false,"rejected":false,"rejected_reason":"none - id_doc not analyzed yet","_links":{"self":"http://test1.husky.io/api/v1/compliance/back_id_doc"}},{"id":"proof_of_address","name":"Proof of address","description":"Picture of Utility bill or Bank statement","uploaded":false,"rejected":false,"rejected_reason":"none - proof_of_address not analyzed yet","_links":{"self":"http://test1.husky.io/api/v1/compliance/proof_of_address"}},{"id":"selfie","name":"Selfie","description":"Proof of life selfie","uploaded":false,"rejected":false,"rejected_reason":"none - selfie facematch not analyzed yet","_links":{"self":"http://test1.husky.io/api/v1/compliance/selfie"}}],"other_compliance_status":""},"meta":{"code":200,"message":"success"}}
 ```
 
 6 - Consultar informações do usuário
