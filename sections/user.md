@@ -67,10 +67,25 @@ Get user compliant state: the required documents, if they were succesfully uploa
       "required_documents":[
          {
             "id":"id_doc",
-            "name":"Government Issued Picture ID",
-            "description":"Government Issued Picture ID",
+            "name":"Front of the Government Issued Picture ID",
+            "description":"Front of the Government Issued Picture ID",
             "uploaded":false,
             "rejected":false,
+            "rejected_reason":"none - id_doc not analyzed yet",
+            "_links":{
+               "self":"http://app.husky.io/api/v1/compliance/id_doc"
+            }
+         },
+         {
+            "id":"back_id_doc",
+            "name":"Back of the Government Issued Picture ID",
+            "description":"Back of the Government Issued Picture ID",
+            "uploaded":false,
+            "rejected":false,
+            "rejected_reason":"none - id_doc not analyzed yet",
+            "_links":{
+               "self":"http://app.husky.io/api/v1/compliance/back_id_doc"
+            }
          },
          {
             "id":"proof_of_address",
@@ -78,8 +93,24 @@ Get user compliant state: the required documents, if they were succesfully uploa
             "description":"Picture of Utility bill or Bank statement",
             "uploaded":false,
             "rejected":false,
+            "rejected_reason":"none - proof_of_address not analyzed yet",
+            "_links":{
+               "self":"http://app.husky.io/api/v1/compliance/proof_of_address"
+            }
+         },
+         {
+            "id":"selfie",
+            "name":"Selfie",
+            "description":"Proof of life selfie",
+            "uploaded":false,
+            "rejected":false,
+            "rejected_reason":"none - selfie facematch not analyzed yet",
+            "_links":{
+               "self":"http://app.husky.io/api/v1/compliance/selfie"
+            }
          }
-      ]
+      ],
+      "other_compliance_status":""
    },
    "meta":{
       "code":200,
